@@ -57,7 +57,7 @@ body {
   height: 100%;
   font-size: 15px;
   color: #fff;
-  background-image: url("/assets/images/not-only/bg-not-only.jpg");
+  background-image: url("../assets/images/not-only/bg-not-only.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100vw 350vh;
