@@ -10,10 +10,10 @@
   <body>
     <header class="header">
       <div class="wrapper">
-        <div class="logo">
+        <a class="logo" href="#">
           <h1 class="logo__title">Cozy House</h1>
           <p class="logo__subtitle">Shelter for pets in Boston</p>
-        </div>
+        </a>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
@@ -64,20 +64,22 @@
             <h3 class="title about__title">
               About the shelter<br />“Cozy House”
             </h3>
-            <p class="about__text">
-              Currently we have 121 dogs and 342 cats on our hands and
-              statistics show that only 20% of them will find a family. The
-              others will continue to live with us and will be waiting for a
-              lucky chance to become dearly loved.
-            </p>
-            <p class="about__text">
-              We feed our wards with the best food and make sure that they do
-              not get sick, feel comfortable (including psychologically) and
-              well. We are supported by 87 volunteers and 28 employees of
-              various skill levels. About 12% of the animals are taken by the
-              shelter staff. Taking care of the animals, they become attached to
-              the pets and would hardly ever leave them alone.
-            </p>
+            <div class="about__text">
+              <p>
+                Currently we have 121 dogs and 342 cats on our hands and
+                statistics show that only 20% of them will find a family. The
+                others will continue to live with us and will be waiting for a
+                lucky chance to become dearly loved.
+              </p>
+              <p>
+                We feed our wards with the best food and make sure that they do
+                not get sick, feel comfortable (including psychologically) and
+                well. We are supported by 87 volunteers and 28 employees of
+                various skill levels. About 12% of the animals are taken by the
+                shelter staff. Taking care of the animals, they become attached
+                to the pets and would hardly ever leave them alone.
+              </p>
+            </div>
           </div>
           <img
             class="about__pets"
@@ -88,26 +90,89 @@
       </section>
       <section class="our-friends">
         <div class="wrapper">
-          <h3 class="our-friends__title">
-            Our friends who<br> are looking for a house
+          <h3 class="title our-friends__title">
+            Our friends who<br />
+            are looking for a house
           </h3>
-          <div class="card">
-            <img
-              class="our-friends__img"
-              src="./assets/images/pets/katrine.png"
-              alt="pet"
-            />
-            <p class="card-name">Katrine</p>
-            <button class="btn2 card__btn-more">Learn more</button>
+          <div class="our-friends__slider">
+            <button class="btn__circle2 card__btn-prev">
+              <img src="./assets/icons/prev-arrow.svg" alt="prev-arrow" />
+            </button>
+            <div class="card">
+              <img
+                class="our-friends__img"
+                src="./assets/images/pets/katrine.png"
+                alt="pet"
+              />
+              <p class="card-name">Katrine</p>
+              <button class="btn2 card__btn-more">Learn more</button>
+            </div>
+            <div class="card jennifer">
+              <img
+                class="our-friends__img"
+                src="./assets/images/pets/jennifer.png"
+                alt="pet"
+              />
+              <p class="card-name">Jennifer</p>
+              <button class="btn2 card__btn-more">Learn more</button>
+            </div>
+            <div class="card woody">
+              <img
+                class="our-friends__img"
+                src="./assets/images/pets/woody.png"
+                alt="pet"
+              />
+              <p class="card-name">Woody</p>
+              <button class="btn2 card__btn-more">Learn more</button>
+            </div>
+            <button class="btn__circle2 card__btn-next">
+              <img src="./assets/icons/next-arrow.svg" alt="next-arrow" />
+            </button>
           </div>
-          <div class="our-friends__btn-arrows">
-          <button class="btn__circle2 card__btn-prev">
-            <img src="./assets/icons/prev-arrow.svg" alt="prev-arrow" />
-          </button>
-          <button class="btn__circle2 card__btn-next">
-            <img src="./assets/icons/next-arrow.svg" alt="next-arrow" />
-          </button></div>
           <button class="btn1 card__btn-know">Get to know the rest</button>
+        </div>
+      </section>
+      <section class="help">
+        <div class="wrapper">
+          <h3 class="title help__title">How you can help<br /> our shelter</h3>
+          <div class="help__items">
+            <div class="help__item">
+              <img src="./assets/icons/1.svg" alt="1" height="60"/>
+              <p>Pet food</p>
+            </div>
+            <div class="help__item">
+              <img src="./assets/icons/2.svg" alt="2" height="60" />
+              <p>Transportation</p>
+            </div>
+            <div class="help__item">
+              <img src="./assets/icons/3.svg" alt="3" height="60"/>
+              <p>Toys</p>
+            </div>
+            <div class="help__item">
+              <img src="./assets/icons/4.svg" alt="4" height="60"/>
+              <p>Bowls and cups</p>
+            </div>
+            <div class="help__item">
+              <img src="./assets/icons/5.svg" alt="5" height="60"/>
+              <p>Shampoos</p>
+            </div>
+            <div class="help__item">
+              <img src="./assets/icons/6.svg" alt="6" height="60"/>
+              <p>Vitamins</p>
+            </div>
+            <div class="help__item">
+              <img src="./assets/icons/7.svg" alt="7" height="60"/>
+              <p>Medicines</p>
+            </div>
+            <div class="help__item">
+              <img src="./assets/icons/8.svg" alt="8" height="60"/>
+              <p>Collars / leashes</p>
+            </div>
+            <div class="help__item">
+              <img src="./assets/icons/9.svg" alt="9" height="60"/>
+              <p>Sleeping areas</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
