@@ -203,6 +203,7 @@ body {
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
   background-color: #fff;
+  -webkit-appearance: none;
 }
 
 input {
@@ -238,7 +239,6 @@ header {
   border-radius: 0.67rem;
   background-color: transparent;
 }
-
 .wrapper {
   display: flex;
   align-items: center;
