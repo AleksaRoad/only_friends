@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/pets.css" />
+    <title>Shelter</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <a class="logo" href="./index.html">
+          <h1 class="logo__title">Cozy House</h1>
+          <p class="logo__subtitle">Shelter for pets in Boston</p>
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__link" href="./index.html">About the shelter</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="./pets.html">Our pets</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="./index.html#help">Help the shelter</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <div class="burger">
+            <div class="burger__btn">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="our-friends" id="friends">
+        <div class="wrapper">
+          <h3 class="title our-friends__title">
+            Our friends who<br />
+            are looking for a house
+          </h3>
+          <div class="our-friends__slider">
+          </div>
+          <div class="our-friends__btns">
+            <button class="btn__circle2 card__btn-next" disabled><<</button>
+            <button class="btn__circle2 card__btn-next" disabled><</button>
+            <button class="btn__circle1 card__btn-next">1</button>
+            <button class="btn__circle2 card__btn-next">></button>
+            <button class="btn__circle2 card__btn-next">>></button>
+          </div>
+        </div>
+      </section>
+    </main>
+        <footer class="footer" id="contacts">
+          <div class="wrapper">
+            <div class="footer__contacts">
+              <h3 class="title footer__title">For questions and suggestions</h3>
+              <a class="footer__info" href='mailto:email@shelter.com'>
+                <img src="./assets/icons/mail.svg" alt="mail">
+                <span>email@shelter.com</span>
+              </a>
+              <a class="footer__info" href="tel:+136745677554">
+                <img src="./assets/icons/phone.svg" alt="phone">
+                <span>+13 674 567 75 54</span>
+              </a>
+            </div>
+            <div class="footer__addresses">
+              <h3 class="title footer__title">We are waiting for your visit</h3>
+              <a href="https://goo.gl/maps/rkfekWMoX3eKAu8j9" class="footer__info footer__info1" target="_blank">
+                <img src="./assets/icons/pin.svg" alt="pin">
+                <span class="brackets">1 Central Street, Boston<br>(entrance from the store)
+              </span></a>
+              <a href="https://goo.gl/maps/2n1FwTQ27ggexPRB6" class="footer__info" target="_blank">
+                <img src="./assets/icons/pin.svg" alt="pin">
+                <span>18 South Park, London</span>
+              </a>
+            </div>
+            <img class="puppy" src="./assets/images/footer/puppy.png" alt="puppy">
+          </div>
+        </footer>
+    <script type="module" src="./js/pets.js"></script>
+  </body>
+</html>
