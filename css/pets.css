@@ -302,14 +302,9 @@ header {
   transition: 0.7s ease-in-out;
 }
 
-@media (max-width: 768px) {
-  header {
-    padding-top: 2rem;
-  }
-}
 @media (max-width: 767px) {
-  header {
-    padding-top: 2rem;
+  .header .wrapper {
+    padding-inline: 1.33rem;
   }
   .burger {
     display: block;
@@ -336,11 +331,6 @@ header {
     display: none;
   }
 }
-@media (max-width: 320px) {
-  .burger__btn {
-    margin-right: 13.4vw;
-  }
-}
 .our-friends {
   background-color: #f6f6f6;
 }
@@ -358,6 +348,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 3rem;
+  overflow: hidden;
 }
 .our-friends__btns {
   display: flex;
@@ -397,14 +388,15 @@ header {
 
 @media (max-width: 768px) {
   .our-friends .wrapper {
-    padding: 13.33rem 0 5rem 0;
+    padding: 13.33rem 0 5.2rem 0;
   }
   .our-friends__title {
     margin-bottom: 1rem;
   }
   .our-friends__slider {
     justify-content: center;
-    margin-bottom: 1.9rem;
+    margin-bottom: 3.6rem;
+    max-height: 1365px;
   }
   .our-friends .card {
     margin: 0.95em 1.3em 0.95em 1.3em;
@@ -419,7 +411,7 @@ header {
     padding: 10.8rem 0 2.95rem 0;
   }
   .our-friends__title {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.85rem;
   }
   .our-friends__btns {
     min-width: 20rem;
@@ -495,7 +487,7 @@ header {
     margin: 0 auto;
     text-align: center;
     width: 16.4rem;
-    height: 16.8rem;
+    height: 16.84rem;
   }
   .footer__addresses {
     margin: 0 auto;

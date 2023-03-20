@@ -9,23 +9,16 @@ burger_btn.addEventListener("click", () => {
 
 //генерация карточек
 const slider_container = document.querySelector(".our-friends__slider");
-import data from "../assets/json/pets.json" assert { type: "json" };
+// import data from "../assets/json/pets.json";
 const brackets = document.querySelector(".brackets");
 
-function getSlider() {
+async function getSlider() {
+  const res = await fetch('../assets/json/pets.json');
+  const data = await res.json();
   data.forEach((el, i) => {
     //определение числа карточек в зависимости от ширины экрана
     const div = document.createElement("div");
     div.classList.add("card");
-    if (window.innerWidth > 768 && i > 7) {
-      div.classList.add("hide");
-    }
-    if (window.innerWidth <= 768 && i > 5) {
-      div.classList.add("hide");
-    }
-    if (window.innerWidth <= 680 && i > 2) {
-      div.classList.add("hide");
-    }
     //структура div
     div.innerHTML = `
               <img
@@ -41,14 +34,20 @@ function getSlider() {
   });
 }
 getSlider();
-//при изменении размера экрана очищать контейнер и обновлять генерацию и менять текст в футере для отодвигания скобок
-window.onresize = function (event) {
-  slider_container.textContent = "";
-  getSlider(), 500;
+// менять текст в футере для отодвигания скобок
+window.addEventListener ('resize', function (event) {
   if (window.innerWidth <= 320) {
     brackets.innerHTML = "1 Central Street, Boston<br>&nbsp(entrance from the store)";
   }
   if (window.innerWidth > 320) {
     brackets.innerHTML = "1 Central Street, Boston<br>(entrance from the store)";
   }
-};
+});
+window.addEventListener ('load', function (event) {
+  if (window.innerWidth <= 320) {
+    brackets.innerHTML = "1 Central Street, Boston<br>&nbsp(entrance from the store)";
+  }
+  if (window.innerWidth > 320) {
+    brackets.innerHTML = "1 Central Street, Boston<br>(entrance from the store)";
+  }
+});
