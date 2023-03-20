@@ -353,6 +353,7 @@ header {
 .our-friends__btns {
   display: flex;
   justify-content: space-between;
+  color: #292929;
   min-width: 23rem;
   margin-right: 0.5rem;
 }

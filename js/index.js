@@ -15,7 +15,7 @@ const slider_container = document.querySelector(".our-friends__slider");
 const brackets = document.querySelector(".brackets");
 
 async function getSlider() {
-  const res = await fetch('../assets/json/pets.json');
+  const res = await fetch('./assets/json/pets.json');
   const data = await res.json();
   data.forEach((el, i) => {
     //определение числа карточек в зависимости от ширины экрана
